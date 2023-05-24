@@ -1,9 +1,10 @@
-<h1><b>Cinema API</b></h1>
+# Cinema API
 API service for cinema management written on DRF
-<h3><b>Installing using GitHub</b></h3>
-Install PostgreSQL and create db,
-make sure you have Python3 ver.3.11
+## Installing using GitHub
+1. Install PostgreSQL and create db,
+   make sure you have Python3 ver.3.11
 <br>
+2. in Terminal run:
 
 ```SQL
 git clone git@github.com:avkpol/Dockerize-DRF-Cinema.git
@@ -15,31 +16,41 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+    
+```
+3. create .env file in your project's directory
 
-set POSTGRES_HOST=<your db hostname>
+```angular2html
+touch .env
+```
+then open .env and provide following information
 
-set POSTGRES_NAME=<your db name>
-
-set POSTGRES_USER=<your db username>
-
-set POSTGRES_PASSWORD=<your db user password>
-
-set SECRET_KEY=<your secret key>
-
-python manage.py migrate
-
-python manage.py runserver
 
 ```
-<h3><b>Run with Docker</b></h3>
+POSTGRES_HOST=<your db hostname>
+
+POSTGRES_NAME=<your db name>
+
+POSTGRES_USER=<your db username>
+
+POSTGRES_PASSWORD=<your db user password>
+
+SECRET_KEY=<your secret key>(if needed)
+
+```
+
+## Run with Docker
 
 Be sure you logged in Docker and have Docker desktop app
+
 ```SQL
 docker-compose build
 docker-compose up
-docker ps
+docker ps 
 ```
-<h3><b>Getting access</b></h3>
+(to see if the container(s) is running
 
+## Getting access
 
-create user via api/user/register
+create user via api/user/register/<br>
+create token via /api/user/token/
