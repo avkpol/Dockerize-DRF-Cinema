@@ -2,7 +2,7 @@
 API service for cinema management written on DRF
 <h3><b>Installing using GitHub</b></h3>
 Install PostgreSQL and create db,
-make sure you have Python3 ver.3.11
+make sure you have Python ver.3.11
 <br>
 
 ```SQL
@@ -12,7 +12,7 @@ cd Dockerize_DRF_Cinema
 
 python -m venv venv
 
-source venv/bin/activate
+source venv/bin/activate (.\env\Scripts\activate (on Windows) )
 
 pip install -r requirements.txt
 
