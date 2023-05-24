@@ -20,13 +20,13 @@ pip install -r requirements.txt
 ```
 3. create .env file in your project's directory
 
-```angular2html
+```SQL
 touch .env
 ```
 then open .env and provide following information
 
 
-```
+```SQL
 POSTGRES_HOST=<your db hostname>
 
 POSTGRES_NAME=<your db name>
